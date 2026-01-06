@@ -1,6 +1,7 @@
 :root {
-  --color-primary-400: hsl(178, 100%, 50%);
-  --color-primary-500: hsl(215, 51%, 70%);
+  --primary-cyan-400: hsl(178, 100%, 50%);
+  --primary-cyan-600: hsl(178, 100%, 30%);
+  --primary-blue-500: hsl(215, 51%, 70%);
 
   --color-neutral: hsl(0, 0%, 100%);
   --color-neutral-800: hsl(215, 32%, 27%);
@@ -8,14 +9,15 @@
   --color-neutral-950: hsl(217, 54%, 11%);
 
   --font-family: "Outfit", sans-serif;
-  --font-size: 18px;
 
-  --content-width: 420px;
-  --container-offset: 1rem;
+  --card-border-radius: 1rem;
+  --card-img-border-radius: .5rem;
+
+  --content-width: 350px;
+  --container-offset: 1.5rem;
   --container-width: 100% - (var(--container-offset) * 2);
 
   font-family: var(--font-family);
-  font-size: var(--font-size);
   line-height: 1.5;
   font-weight: 400;
 

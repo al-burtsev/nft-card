@@ -1,0 +1,58 @@
+[popover] {
+  opacity: 0;
+  transform: translateY(3.5rem);
+  transition:
+    opacity .5s,
+    transform .5s,
+    display .5s allow-discrete,
+    overlay .5s allow-discrete;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+    transform: translateY(3.5rem);
+  }
+}
+
+[popover]:not(:popover-open) {
+  opacity: 0;
+  transform: translateY(3.5rem);
+}
+
+.popover {
+  border: none;
+  border-radius: var(--card-border-radius);
+  background-color: transparent;
+
+  &::backdrop {
+    background-color: var(--color-neutral-800);
+  }
+
+  img {
+    @media (orientation: landscape) {
+      max-width: 90vh;
+      margin-inline: auto;
+    }
+  }
+}
+
+.popover-inner {
+  display: grid;
+  justify-items: flex-end;
+  border-radius: inherit;
+}
+
+.popover-close {
+  position: absolute;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--color-neutral);
+}

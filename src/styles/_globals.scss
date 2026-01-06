@@ -1,3 +1,8 @@
+::selection {
+  color: var(--color-neutral);
+  background-color: var(--color-neutral-950);
+}
+
 body {
   margin: 0;
   display: flex;
@@ -7,11 +12,20 @@ body {
   min-height: 100vh;
 }
 
+.text-accent-1 {
+  color: var(--primary-cyan-400);
+}
+
+.text-accent-2 {
+  color: var(--primary-blue-500);
+  font-weight: 300;
+}
+
 .container {
   width: min(var(--content-width), var(--container-width));
   margin-inline: auto;
 }
 
 .main {
-  padding-block: 8%;
+  padding-block: 2rem;
 }
