@@ -7,7 +7,7 @@ const Card = () => {
       <div className={styles.top}>
         <button type='button' popoverTarget="popover"
           popoverTargetAction="show" aria-label='Open Equilibrium image'>
-          <img src="/src/assets/image-equilibrium.jpg" alt="NFT Equilibrium image" />
+          <img src="./src/assets/image-equilibrium.jpg" alt="NFT Equilibrium image" />
         </button>
       </div>
       <div className={styles.middle}>
@@ -22,7 +22,7 @@ const Card = () => {
       </div>
       <div className={styles.bottom}>
         <picture>
-          <img className={styles.avatar} src="/src/assets/image-avatar.png" alt="Photo of Jules Wyvern" />
+          <img className={styles.avatar} src="./src/assets/image-avatar.png" alt="Photo of Jules Wyvern" />
         </picture>
         <p className={styles.author}><span className='text-accent-2'>Creation of</span> <a href="#!">Jules Wyvern</a>
         </p>
@@ -33,7 +33,7 @@ const Card = () => {
             <span aria-hidden="true">❌</span>
             <span className="sr-only">Close</span>
           </button>
-          <img src="/src/assets/image-equilibrium.jpg" alt="" />
+          <img src="./src/assets/image-equilibrium.jpg" alt="" />
         </div>
       </Popover>
     </article>
