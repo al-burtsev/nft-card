@@ -31,7 +31,7 @@ const Card = () => {
       </div>
       <Popover id="popover">
         <div className="popover-inner">
-          <button className='popover-close' popoverTarget="popover" popoverTargetAction="hide">
+          <button type='button' className='popover-close' popoverTarget="popover" popoverTargetAction="hide">
             <span aria-hidden="true">❌</span>
             <span className="sr-only">Close</span>
           </button>
